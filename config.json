@@ -1,0 +1,108 @@
+{
+  "Title": "DolaNetwork - EasyNav",
+  "brandTitle": "EasyNav",
+  "brandLogo": "assets/icon/CYKD.png",
+  "avatar": "assets/icon/dolacmeo.png",
+  "navLinks": [
+    {
+      "linkLabel": "",
+      "items": [
+        {
+          "icon": "fab fa-github",
+          "linkName": "EasyNav@github",
+          "linkUri": "https://github.com/dolaCmeo/EasyNav"
+        }
+      ]
+    },
+    {
+      "linkLabel": "快捷链接DEMO",
+      "items": [
+        {
+          "icon": "fas fa-star",
+          "linkKey": "DEMO-0",
+          "linkName": "一级链接",
+          "linkUri": "#!"
+        },
+        {
+          "icon": "fas fa-gem",
+          "linkKey": "DEMO-1",
+          "linkName": "一级目录",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "二级链接",
+              "linkUri": "#!"
+            },
+            {
+              "linkKey": "DEMO-2",
+              "linkName": "二级目录",
+              "linkUri": null,
+              "items": [
+                {
+                  "linkName": "三级链接",
+                  "linkUri": "#!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkLabel": "搜索导航",
+      "items": []
+    },
+    {
+      "linkLabel": "云服务商",
+      "items": []
+    },
+    {
+      "linkLabel": "权威教程",
+      "items": []
+    },
+    {
+      "linkLabel": "在线工具",
+      "items": []
+    },
+    {
+      "linkLabel": "网络资源",
+      "items": []
+    }
+  ],
+  "navLists": [
+    {
+      "navName": "云服务",
+      "apps": [
+        {
+          "name": "阿里云",
+          "ps": "@Aliyun",
+          "icon": "aliyun",
+          "addr": ["https://www.aliyun.com/"]
+        },
+        {
+          "name": "Cloudflare",
+          "ps": "@Cloudflare",
+          "icon": "cloudflare",
+          "addr": ["https://dash.cloudflare.com/login"]
+        },
+        {
+          "name": "Oracle Cloud",
+          "ps": "@OracleCloud(jp-tokyo)",
+          "icon": "oraclecloud",
+          "addr": ["https://cloud.oracle.com/?region=ap-tokyo-1"]
+        }
+      ]
+    },
+    {
+      "navName": "我的导航",
+      "apps": [
+        {
+          "name": "次元口袋",
+          "ps": "@OracleCloud(tokyo-arm)",
+          "icon": "CYKD",
+          "addr": ["https://blog.1ab.cc/"]
+        }
+      ]
+    }
+  ]
+}

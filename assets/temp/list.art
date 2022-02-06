@@ -1,0 +1,26 @@
+
+<div class="card my-3">
+    <div class="card-header">
+        <%=navName%>
+        <span class="small">(<%=apps.length%>)</span>
+    </div>
+    <div class="card-body">
+        <div class="row row-cols-xxl-6 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-auto g-2">
+            <% for (var i = 0; i < apps.length; i ++) { %>
+            <div class="col">
+                <div class="card h-100 app-item">
+                    <a href="<%=#apps[i].addr[0]%>" class="stretched-link" target="_blank">
+                        <img class="mx-auto d-block rounded-3" src="assets/icon/<%=#apps[i].icon%>.png" alt="<%=#apps[i].name%>">
+                    </a>
+                    <div class="card-body pb-1 text-center">
+                        <h5 class="m-0"><%=#apps[i].name%></h5>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small class="text-muted"><%=#apps[i].ps%></small>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</div>

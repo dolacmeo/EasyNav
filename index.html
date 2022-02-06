@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <!-- ===============================================-->
+        <!--    Document Title-->
+        <!-- ===============================================-->
+        <title>EasyNav</title>
+
+        <!-- ===============================================-->
+        <!--    Stylesheets-->
+        <!-- ===============================================-->
+        <link href="assets/css/styles.css" rel="stylesheet" />
+        <script src="vendors/fontawesome-free-5.15.4/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 ms-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Brand-->
+            <div class="nav-brand">
+                <a class="navbar-brand ps-3" href="#!">
+                    <img class="me-2" src="assets/icon/CYKD.png" alt="" width="40">
+                    EasyNav
+                </a>
+            </div>
+            <!-- Navbar Search-->
+            <div class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0"></div>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+
+                        <li class="text-black-50">
+                            <a class="dropdown-item" href="https://github.com/dolaCmeo/EasyNav" target="_blank">
+                                <span class="fab fa-github me-1"></span>
+                                <span>点个赞！</span>
+                            </a>
+                        </li>
+
+                        <li><hr class="dropdown-divider" /></li>
+
+                        <li><a class="dropdown-item" href="#!" onclick="makeEasyNav()">导航页</a></li>
+                        <li><a class="dropdown-item" href="config.json" target="_blank">当前设置</a></li>
+                        <li><a class="dropdown-item" href="#!" onclick="showMdDoc()">设置说明</a></li>
+                        <li><a class="dropdown-item" href="#!" onclick="showMdDoc('remark')">参考资料</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+
+                        <!-- 快捷连接区域 START-->
+
+                        <div class="nav" id="navBar"></div>
+
+                        <!-- 快捷连接区域  END -->
+
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">design by: <a href="https://github.com/dolaCmeo" target="_blank" style="color: #ddd;text-decoration-line: none;">@dolaCmeo</a></div>
+                        <i class="fab fa-github pe-1"></i>
+                        <a href="https://github.com/dolaCmeo/EasyNav" target="_blank" style="color: #ddd;text-decoration-line: none;">EasyNav@github</a>
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+
+                    <!-- 主要内容区域 START-->
+
+                    <div class="container-fluid px-4" id="appArea"></div>
+
+                    <!-- 主要内容区域  END -->
+
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+        <script>
+            window.addEventListener('DOMContentLoaded', event => {
+                const sidebarToggle = document.body.querySelector('#sidebarToggle');
+                if (sidebarToggle) {
+                    sidebarToggle.addEventListener('click', event => {
+                        event.preventDefault();
+                        document.body.classList.toggle('sb-sidenav-toggled');
+                        localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
+                    });
+                }
+            });
+        </script>
+        <script src="vendors/bootstrap-5.1.3/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="assets/js/template-web.min.js"></script>
+        <script src="assets/js/EasyNav.js"></script>
+        <script src="vendors/markdown-it-12.3.2/markdown-it.min.js"></script>
+    </body>
+</html>

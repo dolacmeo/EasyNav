@@ -1,0 +1,14 @@
+
+<main>
+    <!-- 主要内容区域 START-->
+    <div class="container-fluid px-4" id="appArea">
+        <div class="card my-3">
+            <div class="card-header"><%=mdName%>.md</div>
+            <div class="card-body">
+                <%=#mdData%>
+            </div>
+        </div>
+    </div>
+    <!-- 主要内容区域  END -->
+</main>
+

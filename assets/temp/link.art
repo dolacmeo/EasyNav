@@ -1,0 +1,45 @@
+
+<!--  NavBar-Item start  -->
+    <% if (linkLabel.length>0) { %>
+    <!-- label-->
+    <div class="sb-sidenav-menu-heading"><%= linkLabel %></div>
+    <% } %>
+    <% for(var i = 0; i < items.length; i++){ %>
+    <!-- parent pages-->
+    <% if (items[i].linkUri==null) { %>
+    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+       data-bs-target="#navLink-<%=# items[i].linkKey %>" aria-expanded="false" aria-controls="collapseLayouts">
+        <div class="sb-nav-link-icon"><i class="<%=# items[i].icon %>"></i></div>
+        <%=# items[i].linkName %>
+        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+    </a>
+    <div class="collapse" id="navLink-<%=# items[i].linkKey %>" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+        <nav class="sb-sidenav-menu-nested nav" id="nav-<%=# items[i].linkKey %>">
+            <% for(var j = 0; j < items[i].items.length; j++){ %>
+            <% if (items[i].items[j].linkUri==null) { %>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+               data-bs-target="#navLink-<%=# items[i].items[j].linkName %>" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                <%=# items[i].items[j].linkName %>
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="navLink-<%=# items[i].items[j].linkName %>" aria-labelledby="headingOne" data-bs-parent="#nav-<%=# items[i].linkKey %>">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <% for(var k = 0; k < items[i].items[j].items.length; k++){ %>
+                    <a class="nav-link" href="<%=# items[i].items[j].items[k].linkUri %>" target="_blank"><%=# items[i].items[j].items[k].linkName %></a>
+                    <% } %>
+                </nav>
+            </div>
+            <% } else { %>
+            <a class="nav-link" href="<%=# items[i].items[j].linkUri %>" target="_blank"><%=# items[i].items[j].linkName %></a>
+            <% } %>
+            <% } %>
+        </nav>
+    </div>
+    <% } else { %>
+    <a class="nav-link" href="<%=# items[i].linkUri %>" target="_blank">
+        <div class="sb-nav-link-icon"><i class="<%=# items[i].icon %>"></i></div>
+        <%=# items[i].linkName %>
+    </a>
+    <% } %>
+    <% } %>
+<!--  NavBar-Item end    -->

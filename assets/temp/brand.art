@@ -1,0 +1,5 @@
+
+<a class="navbar-brand ps-3" href="#!">
+    <img class="me-2" src="<%=# brandLogo %>" alt="" width="40">
+    <%=# brandTitle %>
+</a>
