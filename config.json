@@ -80,16 +80,16 @@
           "addr": ["https://www.aliyun.com/"]
         },
         {
-          "name": "Cloudflare",
-          "ps": "@Cloudflare",
-          "icon": "cloudflare",
-          "addr": ["https://dash.cloudflare.com/login"]
+          "name": "HAssio",
+          "ps": "@HAssio",
+          "icon": "HAssio",
+          "addr": ["https://www.home-assistant.io/"]
         },
         {
-          "name": "Oracle Cloud",
-          "ps": "@OracleCloud(jp-tokyo)",
-          "icon": "oraclecloud",
-          "addr": ["https://cloud.oracle.com/?region=ap-tokyo-1"]
+          "name": "OpenWRT",
+          "ps": "@OpenWRT",
+          "icon": "OpenWRT",
+          "addr": ["https://openwrt.org/"]
         }
       ]
     },
