@@ -1,5 +1,8 @@
 # EasyNav <!-- omit in toc -->
 
+[中文文档](https://github.com/dolaCmeo/EasyNav/blob/master/README.md) |
+[English document](https://github.com/dolaCmeo/EasyNav/blob/master/README-en.md)
+
 > 单页导航，仅需简单配置。
 
 > **仅供小白参考，大神请绕道自撸代码**
@@ -79,7 +82,7 @@ https://github.com/dolaCmeo/EasyNav/archive/refs/heads/main.zip
   **一切可以提供HTTP服务的都可以直接复制粘贴部署**
 
   如没有任何部署条件，建议安装`Python3`，
-  执行[py3_server.bat]即可使用。
+  执行`py3_server.bat`即可使用。
 
 -----
 
