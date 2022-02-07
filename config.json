@@ -9,22 +9,741 @@
       "items": [
         {
           "icon": "fab fa-github",
+          "iconStyle": "",
           "linkName": "EasyNav@github",
           "linkUri": "https://github.com/dolaCmeo/EasyNav"
         }
       ]
     },
     {
+      "linkLabel": "搜索导航",
+      "items": [
+        {
+          "icon": "fad fa-bold",
+          "iconStyle": null,
+          "linkKey": "search-baidu",
+          "linkName": "百度搜索",
+          "linkUri": "https://www.baidu.com/"
+        },
+        {
+          "icon": "fab fa-google",
+          "linkKey": "search-google",
+          "iconStyle": null,
+          "linkName": "Google",
+          "linkUri": "https://www.google.com/ncr"
+        },
+        {
+          "icon": "fad fa-search",
+          "iconStyle": "--fa-primary-color: blue; --fa-secondary-color: dimgray;",
+          "linkKey": "search-engine",
+          "linkName": "搜索引擎",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "搜狗搜索",
+              "linkUri": "https://www.sogou.com/"
+            },
+            {
+              "linkName": "360搜索",
+              "linkUri": "https://www.so.com/"
+            },
+            {
+              "linkName": "Yandex",
+              "linkUri": "https://yandex.com/"
+            },
+            {
+              "linkName": "Bing",
+              "linkUri": "https://www2.bing.com/"
+            },
+            {
+              "linkName": "DuckDuckGo",
+              "linkUri": "https://duckduckgo.com/"
+            },
+            {
+              "linkName": "WolframAlpha",
+              "linkUri": "https://www.wolframalpha.com/"
+            },
+            {
+              "linkName": "stackoverflow",
+              "linkUri": "https://stackoverflow.com/"
+            }
+          ]
+        },
+        {
+          "icon": "fad fa-search-plus",
+          "iconStyle": "--fa-primary-color: blue; --fa-secondary-color: dimgray;",
+          "linkKey": "search-else",
+          "linkName": "其他搜索",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "查命令",
+              "linkUri": "https://command-not-found.com/"
+            },
+            {
+              "linkName": "查Emoji",
+              "linkUri": "https://emojipedia.org/"
+            },
+            {
+              "linkName": "查英文缩写",
+              "linkUri": "https://www.allacronyms.com/"
+            },
+            {
+              "linkName": "查扩展名",
+              "linkUri": "https://fileinfo.com/"
+            },
+            {
+              "linkName": "查发音",
+              "linkUri": "https://zh.forvo.com/"
+            },
+            {
+              "linkName": "查汉字源",
+              "linkUri": "https://hanziyuan.net/"
+            },
+            {
+              "linkName": "查3D模型",
+              "linkUri": "https://www.thingiverse.com/"
+            },
+            {
+              "linkName": "查3D模型",
+              "linkUri": "https://grabcad.com/library"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkLabel": "云服务商",
+      "items": [
+        {
+          "icon": "fab fa-aws",
+          "iconStyle": "color:#ec912d;",
+          "linkKey": "cloud-tops",
+          "linkName": "顶级的云",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "AWS",
+              "linkUri": "https://aws.amazon.com/"
+            },
+            {
+              "linkName": "Azure",
+              "linkUri": "https://azure.microsoft.com/"
+            },
+            {
+              "linkName": "Google",
+              "linkUri": "https://cloud.google.com/"
+            },
+            {
+              "linkName": "阿里云",
+              "linkUri": "https://www.aliyun.com/"
+            },
+            {
+              "linkName": "腾讯云",
+              "linkUri": "https://cloud.tencent.com/"
+            },
+            {
+              "linkName": "Digitalocean",
+              "linkUri": "https://www.digitalocean.com/"
+            }
+          ]
+        },
+        {
+          "icon": "fad fa-clouds",
+          "iconStyle": "--fa-primary-color: #3476d2",
+          "linkKey": "cloud-china",
+          "linkName": "国内的云",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "华为云",
+              "linkUri": "https://www.huaweicloud.com/"
+            },
+            {
+              "linkName": "天翼云",
+              "linkUri": "https://www.ctyun.cn/"
+            },
+            {
+              "linkName": "百度云",
+              "linkUri": "https://cloud.baidu.com/"
+            },
+            {
+              "linkName": "金山云",
+              "linkUri": "https://www.ksyun.com/"
+            },
+            {
+              "linkName": "UCloud",
+              "linkUri": "https://www.ucloud.cn/"
+            },
+            {
+              "linkName": "京东云",
+              "linkUri": "https://www.jdcloud.com/"
+            },
+            {
+              "linkName": "新浪云",
+              "linkUri": "https://www.sinacloud.com/"
+            },
+            {
+              "linkName": "又拍云",
+              "linkUri": "https://www.upyun.com/"
+            },
+            {
+              "linkName": "七牛云",
+              "linkUri": "https://www.qiniu.com/"
+            }
+          ]
+        },
+        {
+          "icon": "fab fa-cloudflare",
+          "iconStyle": "color:#f68220;",
+          "linkKey": "cloud-world",
+          "linkName": "国外的云",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "Cloudflare",
+              "linkUri": "https://www.cloudflare.com/"
+            },
+            {
+              "linkName": "OracleCloud",
+              "linkUri": "https://cloud.oracle.com/"
+            },
+            {
+              "linkName": "Linode",
+              "linkUri": "https://www.linode.com/"
+            },
+            {
+              "linkName": "VULTR",
+              "linkUri": "https://www.vultr.com/"
+            },
+            {
+              "linkName": "Bandwagon",
+              "linkUri": "https://bandwagonhost.com/"
+            },
+            {
+              "linkName": "Office365",
+              "linkUri": "https://developer.microsoft.com/en-us/office"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkLabel": "在线工具",
+      "items": [
+        {
+          "icon": "fad fa-toolbox",
+          "iconStyle": null,
+          "linkKey": "tool-allinone",
+          "linkName": "工具合集",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "tool.lu",
+              "linkUri": "https://tool.lu/"
+            },
+            {
+              "linkName": "chinaz",
+              "linkUri": "https://tool.chinaz.com/"
+            },
+            {
+              "linkName": "oschina",
+              "linkUri": "https://tool.oschina.net/"
+            }
+          ]
+        },
+        {
+          "icon": "fad fa-network-wired",
+          "iconStyle": null,
+          "linkKey": "tool-network",
+          "linkName": "网络检测",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "全方位IP",
+              "linkUri": "http://www.ip111.cn/"
+            },
+            {
+              "linkName": "我的IP",
+              "linkUri": "http://myip.ipip.net/"
+            },
+            {
+              "linkName": "IP.json",
+              "linkUri": "https://api.myip.la/cn?json"
+            },
+            {
+              "linkName": "ping.pe",
+              "linkUri": "http://ping.pe/"
+            },
+            {
+              "linkName": "IPv6测试",
+              "linkUri": "https://www.test-ipv6.com/"
+            },
+            {
+              "linkName": "Whois",
+              "linkUri": "https://whois.gandi.net/"
+            }
+          ]
+        },
+        {
+          "icon": "fad fa-spell-check",
+          "iconStyle": null,
+          "linkKey": "tool-text",
+          "linkName": "文字处理",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "Json编辑处理",
+              "linkUri": "https://jsoneditoronline.org/beta/"
+            },
+            {
+              "linkName": "docker-compose.yml",
+              "linkUri": "https://bucherfa.github.io/dcc-web/"
+            },
+            {
+              "linkName": "生成二维码",
+              "linkUri": "https://www.liantu.com/shiliang/"
+            },
+            {
+              "linkName": "乱码恢复",
+              "linkUri": "http://www.mytju.com/classcode/tools/messyCodeRecover.asp"
+            },
+            {
+              "linkName": "ASCII 大字",
+              "linkUri": "http://www.network-science.de/ascii/"
+            },
+            {
+              "linkName": "ASCII 绘板",
+              "linkUri": "https://asciiflow.com/"
+            },
+            {
+              "linkName": "在线Markdown",
+              "linkUri": "https://www.zybuluo.com/mdeditor"
+            },
+            {
+              "linkName": "代码转图片",
+              "linkUri": "https://codezen.rishimohan.me/"
+            },
+            {
+              "linkName": "Json-CSV处理",
+              "linkUri": "https://csvjson.com/"
+            },
+            {
+              "linkName": "表格生成",
+              "linkUri": "https://www.tablesgenerator.com/"
+            },
+            {
+              "linkName": "词云分析",
+              "linkUri": "http://cloud.niucodata.com/"
+            },
+            {
+              "linkName": "正则表达式",
+              "linkUri": "https://regex101.com/"
+            },
+            {
+              "linkName": "正则分析",
+              "linkUri": "https://jex.im/regulex/"
+            },
+            {
+              "linkName": "文本工具",
+              "linkUri": "http://www.txttool.com/"
+            },
+            {
+              "linkName": "拼音注音工具",
+              "linkUri": "https://toneoz.com/imez/"
+            }
+          ]
+        },
+        {
+          "icon": "fad fa-images",
+          "iconStyle": null,
+          "linkKey": "tool-image",
+          "linkName": "图片处理",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "ORC文字识别",
+              "linkUri": "https://pearocr.com/"
+            },
+            {
+              "linkName": "图片编辑",
+              "linkUri": "https://www.iloveimg.com/"
+            },
+            {
+              "linkName": "绘制流程图",
+              "linkUri": "https://www.myshuju.net/"
+            },
+            {
+              "linkName": "图片转字符串",
+              "linkUri": "http://www.asciiarts.net/"
+            },
+            {
+              "linkName": "图片AI放大",
+              "linkUri": "https://bigjpg.com/"
+            },
+            {
+              "linkName": "图片压缩",
+              "linkUri": "https://squoosh.app/"
+            },
+            {
+              "linkName": "色图生成",
+              "linkUri": "https://trianglify.io/"
+            }
+          ]
+        },
+        {
+          "icon": "fad fa-file-export",
+          "iconStyle": null,
+          "linkKey": "tool-file",
+          "linkName": "文件处理",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "文件损坏大师",
+              "linkUri": "http://xnet.se/fd/"
+            },
+            {
+              "linkName": "PDF处理",
+              "linkUri": "https://smallpdf.com/"
+            },
+            {
+              "linkName": "字体格式转换",
+              "linkUri": "https://transfonter.org/"
+            }
+          ]
+        },
+        {
+          "icon": "fad fa-browser",
+          "iconStyle": null,
+          "linkKey": "tool-service",
+          "linkName": "网络服务",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "空白页",
+              "linkUri": "https://blank.org/"
+            },
+            {
+              "linkName": "当前时间",
+              "linkUri": "https://time.is/"
+            },
+            {
+              "linkName": "不蒜子",
+              "linkUri": "http://busuanzi.ibruce.info/"
+            },
+            {
+              "linkName": "邮箱校验",
+              "linkUri": "https://verify-email.org/"
+            },
+            {
+              "linkName": "yubico测试",
+              "linkUri": "https://demo.yubico.com/"
+            },
+            {
+              "linkName": "AcFun工具",
+              "linkUri": "https://www.leesoar.com/acfun"
+            }
+          ]
+        },
+        {
+          "icon": "fad fa-server",
+          "iconStyle": null,
+          "linkKey": "tool-storage",
+          "linkName": "网络存储",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "pastebin",
+              "linkUri": "https://pastebin.com/"
+            },
+            {
+              "linkName": "钛盘",
+              "linkUri": "https://app.tmp.link/"
+            },
+            {
+              "linkName": "图床sm.ms",
+              "linkUri": "https://sm.ms/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkLabel": "网络资源",
+      "items": [
+        {
+          "icon": "fad fa-code",
+          "iconStyle": null,
+          "linkKey": "Code",
+          "linkName": "程序代码",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "Github",
+              "linkUri": "#!"
+            },
+            {
+              "linkName": "Gitee",
+              "linkUri": "#!"
+            },
+            {
+              "linkName": "DockerHub",
+              "linkUri": "#!"
+            },
+            {
+              "linkName": "npm",
+              "linkUri": "https://www.npmjs.com/"
+            },
+            {
+              "linkName": "PyPI",
+              "linkUri": "https://pypi.org/"
+            },
+            {
+              "linkName": "GreasyFork",
+              "linkUri": "https://greasyfork.org/"
+            },
+            {
+              "linkName": "SleazyFork",
+              "linkUri": "https://sleazyfork.org/zh-CN"
+            },
+            {
+              "linkName": "userstyles",
+              "linkUri": "https://userstyles.org/"
+            }
+          ]
+        },
+        {
+          "icon": "fad fa-download",
+          "iconStyle": null,
+          "linkKey": "Software",
+          "linkName": "软件游戏",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "ITellYou",
+              "linkUri": "https://msdn.itellyou.cn/"
+            },
+            {
+              "linkName": "0daydown",
+              "linkUri": "https://www.0daydown.com/"
+            },
+            {
+              "linkName": "大眼仔",
+              "linkUri": "http://www.dayanzai.me/"
+            },
+            {
+              "linkName": "轻狂志",
+              "linkUri": "https://www.flighty.cn/"
+            },
+            {
+              "linkName": "52破解",
+              "linkUri": "https://www.52pojie.cn/forum-16-1.html"
+            },
+            {
+              "linkName": "绿色工具",
+              "linkUri": "https://www.sordum.org/"
+            },
+            {
+              "linkName": "易破姐",
+              "linkUri": "https://www.ypojie.com/"
+            },
+            {
+              "linkName": "423down",
+              "linkUri": "https://www.423down.com/"
+            },
+            {
+              "linkName": "52破解",
+              "linkUri": "https://www.52pojie.cn/forum-16-1.html"
+            },
+            {
+              "linkName": "ROM猎人",
+              "linkUri": "https://www.yang2000ling.com/"
+            },
+            {
+              "linkName": "FitGirl",
+              "linkUri": "https://fitgirl-repacks.site/"
+            },
+            {
+              "linkName": "PCGames",
+              "linkUri": "https://pcgamestorrents.com/"
+            },
+            {
+              "linkName": "FapNation",
+              "linkUri": "https://fap-nation.com/"
+            },
+            {
+              "linkName": "2DFan",
+              "linkUri": "https://www.2dfan.com/"
+            },
+            {
+              "linkName": "老翁模拟",
+              "linkUri": "https://www.oldmanemu.net/"
+            },
+            {
+              "linkName": "NexusMods",
+              "linkUri": "https://www.nexusmods.com/"
+            }
+          ]
+        },
+        {
+          "icon": "fad fa-icons",
+          "iconStyle": null,
+          "linkKey": "multiMedia",
+          "linkName": "影音图文",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "AGE动漫",
+              "linkUri": "https://www.age.tv/"
+            },
+            {
+              "linkName": "低端影视",
+              "linkUri": "https://ddrk.me/"
+            },
+            {
+              "linkName": "NO视频",
+              "linkUri": "https://www.novipnoad.com/"
+            },
+            {
+              "linkName": "万能RUN",
+              "linkUri": "https://wannengrun.com/"
+            },
+            {
+              "linkName": "DeviantArt",
+              "linkUri": "https://www.deviantart.com/"
+            },
+            {
+              "linkName": "PixaBay",
+              "linkUri": "https://pixabay.com/"
+            },
+            {
+              "linkName": "WallpapersWide",
+              "linkUri": "https://wallpaperswide.com/"
+            },
+            {
+              "linkName": "WallHaven",
+              "linkUri": "https://wallhaven.cc/"
+            },
+            {
+              "linkName": "iconfont",
+              "linkUri": "https://www.iconfont.cn/"
+            },
+            {
+              "linkName": "findicons",
+              "linkUri": "https://findicons.com/"
+            },
+            {
+              "linkName": "\uD83D\uDD1E rule34",
+              "linkUri": "https://rule34.xxx/"
+            },
+            {
+              "linkName": "\uD83D\uDD1E Avgle",
+              "linkUri": "https://avgle.com/"
+            },
+            {
+              "linkName": "\uD83D\uDD1E 91镜像",
+              "linkUri": "https://v.imgccc.com/"
+            },
+            {
+              "linkName": "\uD83D\uDD1E E-Hentai",
+              "linkUri": "https://e-hentai.org/"
+            }
+          ]
+        },
+        {
+          "icon": "fad fa-file-search",
+          "iconStyle": null,
+          "linkKey": "torrents",
+          "linkName": "宁有种乎",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "NewTrackon",
+              "linkUri": "https://newtrackon.com/"
+            },
+            {
+              "linkName": "BT之家",
+              "linkUri": "https://btbtt11.com/"
+            },
+            {
+              "linkName": "BTDig",
+              "linkUri": "https://www.btdig.com/"
+            },
+            {
+              "linkName": "TorrentKitty",
+              "linkUri": "https://www.torrentkitty.tv/"
+            },
+            {
+              "linkName": "RARBG",
+              "linkUri": "https://www.rarbg.to/"
+            },
+            {
+              "linkName": "爱恋动漫",
+              "linkUri": "http://www.kisssub.org/"
+            },
+            {
+              "linkName": "\uD83C\uDE51 nyaa.si",
+              "linkUri": "https://nyaa.si/"
+            },
+            {
+              "linkName": "\uD83D\uDD1E nyaa.si",
+              "linkUri": "https://sukebei.nyaa.si/"
+            }
+          ]
+        },
+        {
+          "icon": "fad fa-comments",
+          "iconStyle": null,
+          "linkKey": "bbs",
+          "linkName": "大小坛子",
+          "linkUri": null,
+          "items": [
+            {
+              "linkName": "A岛匿名版",
+              "linkUri": "https://adnmb3.com/forum"
+            },
+            {
+              "linkName": "3DMGame",
+              "linkUri": "https://bbs.3dmgame.com/forum.php"
+            },
+            {
+              "linkName": "4chan",
+              "linkUri": "https://www.4channel.org/"
+            },
+            {
+              "linkName": "5chan",
+              "linkUri": "https://5ch.net/"
+            },
+            {
+              "linkName": "其乐Keylol",
+              "linkUri": "https://keylol.com/"
+            },
+            {
+              "linkName": "91TVG",
+              "linkUri": "https://www.91tvg.com/"
+            },
+            {
+              "linkName": "F95Zone",
+              "linkUri": "https://f95zone.to/"
+            }
+          ]
+        }
+
+      ]
+    },
+    {
       "linkLabel": "快捷链接DEMO",
       "items": [
         {
-          "icon": "fas fa-star",
+          "icon": "fad fa-star",
+          "iconStyle": null,
           "linkKey": "DEMO-0",
           "linkName": "一级链接",
           "linkUri": "#!"
         },
         {
-          "icon": "fas fa-gem",
+          "icon": "fad fa-gem",
+          "iconStyle": null,
           "linkKey": "DEMO-1",
           "linkName": "一级目录",
           "linkUri": null,
@@ -41,32 +760,16 @@
                 {
                   "linkName": "三级链接",
                   "linkUri": "#!"
+                },
+                {
+                  "linkName": "最多三级",
+                  "linkUri": "#!"
                 }
               ]
             }
           ]
         }
       ]
-    },
-    {
-      "linkLabel": "搜索导航",
-      "items": []
-    },
-    {
-      "linkLabel": "云服务商",
-      "items": []
-    },
-    {
-      "linkLabel": "权威教程",
-      "items": []
-    },
-    {
-      "linkLabel": "在线工具",
-      "items": []
-    },
-    {
-      "linkLabel": "网络资源",
-      "items": []
     }
   ],
   "navLists": [
